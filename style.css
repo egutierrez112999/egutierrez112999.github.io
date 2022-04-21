@@ -1,0 +1,58 @@
+
+
+head {
+	color: "red";
+}
+
+body {
+	color: "black";
+	font-family: "Comic Sans MS";
+}
+
+#grid {
+	display: grid;
+	height:925px;
+	grid-template-columns:50% 50%;
+}
+#column1{
+	background-color:lavender;
+	color:black;
+}
+#column2{
+	background-color:purple;
+	color:red;
+}
+h1{
+	color:black;
+}
+textarea{
+	margin:auto;
+	width:85%;
+	height:50px;
+	font-size:20px;
+}
+ul {
+	color:black;
+	font-size:25px;
+	padding: 10px 5px;
+}
+li{
+	padding: 10px 5px;
+	border-style: solid;
+	border-radius: 10px;
+}
+
+button{
+	background-color:lavender;
+	padding:14px;
+	border-radius: 8px;
+	color: purple;
+	width:100px;
+}
+button:hover{
+	background-color:white;
+	color:red;
+}
+
+
+

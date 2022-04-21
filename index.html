@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>"Adopt a Dog in Your Area"</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id = "login">
+			<h1 id = "creation">Sign in</h1>	
+			<h1 id = "emailexists">That User Already Exists</h1>	
+			<h1 id = "wrongpasswd">Incorrect Password</h1>	
+			<textarea id = "testemail" placeholder = "email"></textarea>
+			<textarea id = "testpassword" placeholder = "password"></textarea>
+			<p></p>
+			<textarea id = "testfirstname" placeholder = "first name"></textarea>
+			<textarea id = "testlastname" placeholder = "last name"></textarea>
+			<button id= "createuser">Create New User</button>
+			<button id= "createmenu">Make New account</button>
+			<button id= "signin">Sign In</button>
+		</div>
+
+		<div id = "grid">
+			<div id = "column1">
+				<h1 id = "signinsuccess">Sign in Successful</h1>	
+				<h1>Animal Adoption Center's Near You</h1>
+				<ul id= "center-list">
+				</ul>
+			</div>
+			
+			<div id = "column2">
+				<h1 id = "hadd">Add a New Adoption Center</h1>
+				<h1 id = "hedit">You are now in Edit Mode</h1>
+				<textarea id = "centerName" placeholder = "Enter a new center here: "></textarea>
+				<textarea id = "centerLocation" placeholder = "Enter the location here: "></textarea>
+				<textarea id = "centerRating" placeholder = "Enter the rating here: "></textarea>
+				<textarea id = "centerURL" placeholder = "Enter the url here: "></textarea>
+				<textarea id = "centerSelection" placeholder = "Enter the selection of animals here: "></textarea>
+				<p></p>
+				<button id= "submit">Submit</button>
+				<button id= "editsubmit">Submit Edit</button>
+				<p></p>
+				<img src="http://clipart-library.com/images_k/dog-png-transparent/dog-png-transparent-1.png" style="width:75%;height:75%"></img>
+			</div>		
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
