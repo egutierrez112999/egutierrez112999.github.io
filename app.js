@@ -94,7 +94,7 @@ function createNewCenter(adoptionCenterName, adoptionCenterLocation, adoptionCen
 	//data += "&cuisine=" + encodedURIComponent(restaurantCuisine)
 	console.log("This is the New Center Data I am going to send over the server", dataname+datalocation+datarating+dataurl+dataselection);
 	
-	fetch("http://localhost:8080/adoptioncenters",{
+	fetch("https://southernutahadoption.herokuapp.com/adoptioncenters",{
 		method: 'POST',
 		credentials: 'include',
 		body:dataname+datalocation+datarating+dataurl+dataselection,
@@ -108,7 +108,7 @@ function createNewCenter(adoptionCenterName, adoptionCenterLocation, adoptionCen
 };
 
 function deleteCenterFromServer(centerID) {
-	fetch("http://localhost:8080/adoptioncenters/" + centerID, {
+	fetch("https://southernutahadoption.herokuapp.com/adoptioncenters/" + centerID, {
 	method: "DELETE",
 	credentials: 'include'
 	}).then(function(response){
@@ -129,7 +129,7 @@ function updateCenterFromServer(adoptionCenterID, adoptionCenterName, adoptionCe
 	var dataselection = "&selection=" +encodeURIComponent(adoptionCenterSelection);
 	var data = dataid+dataname+datalocation+datarating+dataurl+dataselection;
 	console.log("This is the data i am going to send over the server", dataid+dataname+datalocation+datarating+dataurl+dataselection);
-	fetch("http://localhost:8080/adoptioncenters/"+ adoptionCenterID,{
+	fetch("https://southernutahadoption.herokuapp.com/adoptioncenters/"+ adoptionCenterID,{
 		method: 'PUT',
 		credentials: 'include',
 		body: data,
@@ -143,7 +143,7 @@ function updateCenterFromServer(adoptionCenterID, adoptionCenterName, adoptionCe
 };
 
 function loadAdoptionCenters(){
-	fetch("http://localhost:8080/adoptioncenters", {
+	fetch("https://southernutahadoption.herokuapp.com/adoptioncenters", {
 		credentials: 'include'
 	}).then(function(response){
 	response.json().then(function(data){
@@ -222,7 +222,7 @@ function createNewUser(userEmail, userPassword, userFirstName, userLastName){
 	var datafname = "&firstname=" +encodeURIComponent(userFirstName);
 	var datalname = "&lastname=" +encodeURIComponent(userLastName);
 	console.log("This is the New User Data I am going to send over the server", dataemail+datapassword+datafname+datalname);
-	fetch("http://localhost:8080/users",{
+	fetch("https://southernutahadoption.herokuapp.com/users",{
 		method: 'POST',
 		credentials: 'include',
 		body:dataemail+datapassword+datafname+datalname,
@@ -251,7 +251,7 @@ function createNewSession(userEmail, userPassword){
 	var dataemail = "email=" +encodeURIComponent(userEmail);
 	var datapassword = "&password=" +encodeURIComponent(userPassword);
 	console.log("This is the User Sign In Data I am going to send over the server", dataemail+datapassword);
-	fetch("http://localhost:8080/sessions",{
+	fetch("https://southernutahadoption.herokuapp.com/sessions",{
 		method: 'POST',
 		credentials: 'include',
 		body:dataemail+datapassword,
