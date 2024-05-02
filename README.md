@@ -1,3 +1,6 @@
+# Adoption Centers
+Simple Web for reviewing and contacting local pet adoption centers. You can create an account, add adoption centers in the area, review centers in your area, and see contact information for all centers.
+
 # Documentation
 
 ## Resources
